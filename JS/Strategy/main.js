@@ -1,10 +1,10 @@
-import { SportsVehicle } from "./sportsVehicle.js";
-import { OffRoadVehicle } from "./offRoadVehicle.js";
-import { CityVehicle } from "./cityVehicle.js";
+import { Vehicle } from "./vehicle.js";
+import { SpecialDrive } from "./specialDrive.js";
+import { NormalDrive } from "./normalDrive.js";
 
-const sportsCar = new SportsVehicle();
-const offRoadCar = new OffRoadVehicle();
-const cityCar = new CityVehicle();
+const sportsCar = new Vehicle(new SpecialDrive());
+const offRoadCar = new Vehicle(new SpecialDrive());
+const cityCar = new Vehicle(new NormalDrive());
 
 sportsCar.driveVehicle(); // Special drive capability
 offRoadCar.driveVehicle(); // Normal drive capability

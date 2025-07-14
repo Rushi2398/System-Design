@@ -1,9 +1,9 @@
 package main
 
 func main() {
-	sportsCar := NewSportsVehicle()
-	offRoadCar := NewOffRoadVehicle()
-	cityCar := NewCityVehicle()
+	sportsCar := &Vehicle{driveBehaviour: SpecialDrive{}}
+	offRoadCar := &Vehicle{driveBehaviour: NormalDrive{}}
+	cityCar := &Vehicle{driveBehaviour: NormalDrive{}}
 
 	sportsCar.DriveVehicle()  // Output: Sports drive capability
 	offRoadCar.DriveVehicle() // Output: Normal drive capability
