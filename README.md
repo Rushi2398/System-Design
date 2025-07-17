@@ -4,7 +4,8 @@ A collection of commonly used **System Design Patterns** implemented in Go and J
 
 ## ✅ Implemented Design Patterns
 
-| Pattern Name     | Description                                               | Location        |
-|------------------|-----------------------------------------------------------|-----------------|
-| **Strategy**     | Enables selecting an algorithm at runtime                 | `strategy/`     |
-| **Observer**     | Allows objects to be notified when another changes state  | `observer/`     |
+| Pattern Name     | Description                                                        | Location                |
+|------------------|--------------------------------------------------------------------|-------------------------|
+| **Strategy**     | Enables selecting an algorithm at runtime                          | `strategy pattern/`     |
+| **Observer**     | Allows objects to be notified when another changes state           | `observer pattern/`     |
+| **Decorator**    | Add new behavior to objects by placing them insidewrapper objects  | `decorator pattern/`    |
