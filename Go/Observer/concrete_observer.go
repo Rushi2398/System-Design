@@ -1,11 +1,12 @@
 package main
 
-import "fmt"
-
 type ConcreteObserver struct {
+	Sub  Subject
 	Name string
 }
 
 func (co *ConcreteObserver) Update(data string) {
-	fmt.Printf("%s received: %s\n", co.Name, data)
+	if co.Sub != nil {
+		co.Sub.GetState(co.Name)
+	}
 }

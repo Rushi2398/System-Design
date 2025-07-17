@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type ConcreteSubject struct {
 	observers []Observer
 }
@@ -21,4 +23,8 @@ func (s *ConcreteSubject) Notify(data string) {
 	for _, o := range s.observers {
 		o.Update(data)
 	}
+}
+
+func (s *ConcreteSubject) GetState(data string) {
+	fmt.Println("This state received by: ", data)
 }
