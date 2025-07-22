@@ -1,6 +1,8 @@
 package main
 
-func Shape(shape string) shapeInterface {
+type SimpleShapeFactory struct{}
+
+func (s SimpleShapeFactory) CreateShape(shape string) shapeInterface {
 	switch shape {
 	case "Circle":
 		return Circle{}

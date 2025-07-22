@@ -1,9 +1,11 @@
 package main
 
 func main() {
-	shape1 := Shape("Circle")
-	shape2 := Shape("Rectangle")
-	shape3 := Shape("Square")
+	factory := SimpleShapeFactory{}
+
+	shape1 := factory.CreateShape("Circle")
+	shape2 := factory.CreateShape("Rectangle")
+	shape3 := factory.CreateShape("Square")
 
 	if shape1 != nil {
 		shape1.Draw()
