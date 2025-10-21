@@ -1,5 +1,3 @@
-import { TradingStrategy } from "./strategyInterface.js";
-
 export class Investor {
   constructor(name, strategy) {
     this.name = name;
