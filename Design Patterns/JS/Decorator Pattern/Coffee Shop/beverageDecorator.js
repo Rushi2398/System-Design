@@ -1,6 +1,6 @@
 import Beverage from "./beverage.js";
 
-class BeverageDecorator extends Beverage {
+export class BeverageDecorator extends Beverage {
   constructor(beverage) {
     super();
     this.beverage = beverage;
@@ -14,5 +14,3 @@ class BeverageDecorator extends Beverage {
     return this.beverage.description();
   }
 }
-
-export default BeverageDecorator;

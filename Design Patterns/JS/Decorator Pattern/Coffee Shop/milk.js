@@ -1,6 +1,6 @@
 import BeverageDecorator from "./beverageDecorator.js";
 
-class Milk extends BeverageDecorator {
+export class Milk extends BeverageDecorator {
   cost() {
     return super.cost() + 0.2;
   }
@@ -9,5 +9,3 @@ class Milk extends BeverageDecorator {
     return super.description() + ", Milk";
   }
 }
-
-export default Milk;

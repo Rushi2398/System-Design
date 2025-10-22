@@ -1,6 +1,6 @@
 import BeverageDecorator from "./beverageDecorator.js";
 
-class Mocha extends BeverageDecorator {
+export class Mocha extends BeverageDecorator {
   cost() {
     return super.cost() + 0.3;
   }
@@ -9,5 +9,3 @@ class Mocha extends BeverageDecorator {
     return super.description() + ", Mocha";
   }
 }
-
-export default Mocha;

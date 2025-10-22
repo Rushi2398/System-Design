@@ -1,4 +1,4 @@
-class Beverage {
+export class Beverage {
   cost() {
     throw new Error("Method 'cost()' must be implemented.");
   }
@@ -7,5 +7,3 @@ class Beverage {
     throw new Error("Method 'description()' must be implemented.");
   }
 }
-
-export default Beverage;

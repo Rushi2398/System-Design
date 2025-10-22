@@ -1,6 +1,6 @@
 import Beverage from "./beverage.js";
 
-class Espresso extends Beverage {
+export class Espresso extends Beverage {
   cost() {
     return 1.99;
   }
@@ -9,5 +9,3 @@ class Espresso extends Beverage {
     return "Espresso";
   }
 }
-
-export default Espresso;
