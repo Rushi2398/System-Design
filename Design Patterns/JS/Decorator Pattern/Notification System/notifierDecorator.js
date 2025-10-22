@@ -5,8 +5,4 @@ export class NotifierDecorator extends Notifier {
     super();
     this.notifier = notifier;
   }
-
-  send(message) {
-    this.notifier.send(message);
-  }
 }
