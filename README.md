@@ -11,7 +11,7 @@ A collection of commonly used **System Design Patterns** implemented in Go and J
 | **Decorator**         | Add new behavior to objects by placing them insidewrapper objects  | `Design Patterns/decorator pattern/`         |
 | **Factory**           | Allows Object creation based on condition without duplication      | `Design Patterns/factory pattern/`           |
 | **Abstract Factory**  | Factory of Factories Pattern                                       | `Design Patterns/abstract factory pattern/`  |
-
+| **Singleton Pattern** | Allowing instantiation of single object globally                   | `Design Patterns/singleton pattern/`         |
 
 Some Real Life Examples using **Design Patterns** in Go and JS.
 | Example                             | Design Pattern Used.                                                        | Location                                     |
